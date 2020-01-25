@@ -1,0 +1,40 @@
+body{
+    color: white;
+}
+img{
+    max-width: 25em;
+}
+h2{
+    border-bottom: 1px solid white;
+    max-width:10em;
+}
+a:hover{
+    border-bottom: 1px solid white;
+}
+
+
+/*
+Styling for the list of Skills table
+*/
+
+/*Styling for a table (languages table)*/
+table {
+    margin: 1em 0em;
+    border: 0.1em solid white;
+    
+  }
+  /*Styling for the header columns*/
+  th {
+    margin: 0.2em;
+    padding: 0.2em;
+    border-right: 0.2em solid;
+    text-align: center;
+  }
+  /*Styling for the default cells*/
+  td {
+    margin: 0.2em;
+    padding: 0.2em;
+    border-right: 0.2em solid;
+    text-align: center;
+  }
+  
