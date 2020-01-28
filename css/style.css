@@ -13,6 +13,11 @@ a:hover{
 }
 
 
+.carousel-image{
+  min-width:40em;
+}
+
+
 /*
 Styling for the list of Skills table
 */
