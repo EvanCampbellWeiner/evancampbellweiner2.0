@@ -14,6 +14,19 @@ a:hover{
   min-width:40em;
 }
 
+/*Center unordered list in resume for highlighted box*/
+ul.center{
+  list-style-type: none;
+  display:flex;
+  justify-content:space-around;
+  flex-direction:column;
+  text-align:center;
+}
+
+/*Center unordered list in resume for highlighted box*/
+ul.courses{
+  font-size:1.2em;
+}
 
 /*
 Styling for the list of Skills table
