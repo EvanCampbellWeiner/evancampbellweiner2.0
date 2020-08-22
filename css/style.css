@@ -52,4 +52,17 @@ table {
     border-right: 0.2em solid;
     text-align: center;
   }
-  
+
+  /*Image styling for blog post in projects*/
+  img.projectimage {
+    max-width: 10em;
+    max-height: 8.5em;
+    margin-left: 5em;
+    margin-top: 1em;
+    border-radius:5em;
+    border:0.2em solid white;
+  }
+
+  .card{
+    background-color:white;
+  }

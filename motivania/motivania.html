@@ -1,0 +1,83 @@
+<!--
+  Program Name: Motivania.html
+  Programmer Name: Evan Campbell-Weiner
+  Date Last Updated: 7/22/19
+
+  Description:
+  This is a bucket list web application that utilizes boredapi from boredapi.com to create
+  a lightly customizable "fillable" bucket of activities to do.
+
+  Currently all it does is allow you to add random items to the bucket (until its full (17 items)), remove them starting from
+  the first item entered, and to choose if you want 1 of free activities, relaxing activities, solo activities, or no
+  restrictions on activities.
+
+  Associated Files: mScript.js , mStyle.css , jquery , boredapi, reset.css
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <!-- head of the document -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Motivania</title>
+
+    <!-- links to css -->
+    <link href="css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="css/mStyle.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <!-- header with description of the program -->
+    <header>
+      <h1>Motivania</h1>
+      <p>
+        This is a program that utilizes the boredapi to create a literal bucket
+        list. It offers the user the opportunity to fill a bucket with
+        activities to do! Currently there is no ability to save the items so
+        please take a screenshot or print the screen.
+      </p>
+      <p>
+        This application also allows for 3 different specifications. While they
+        cannot all run at the same time, you can specify if you'd like the
+        activities to be free, be activities for an individual person, and be
+        activities that are relaxing.
+      </p>
+    </header>
+    <!-- main content of the page -->
+    <main>
+      <!-- list of options for specifications -->
+      <ul>
+        <li><button id="none" class="triggered">No specifications</button></li>
+        <li><button id="single">1 Person Only</button></li>
+        <li><button id="free">Free Only</button></li>
+        <li><button id="relaxed">Relaxing Only</button></li>
+      </ul>
+      <!--ordered list for items in bucket -->
+      <ol></ol>
+      <!-- div for bucket -->
+      <div></div>
+      <!-- list of buttons to fill/empty bucket -->
+      <ul>
+        <li><button id="fill">Fill the Bucket</button></li>
+        <li><button id="drink">Empty the Bucket</button></li>
+      </ul>
+    </main>
+    <!-- bottom of page  -->
+    <footer>
+      <div>&copy; 2019 Evan Campbell-Weiner.</div>
+      <div>boredapi from boredapi.com</div>
+    </footer>
+
+    <!-- included scripts -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- fallback for jQuery if CDN is unavailable -->
+    <script>
+      window.jQuery ||
+        document.write('<script src="scripts/jquery.js"><\/script>');
+    </script>
+    <script src="scripts/mScript.js"></script>
+  </body>
+</html>

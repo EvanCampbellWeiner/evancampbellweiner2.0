@@ -1,0 +1,111 @@
+/*
+    Document Name: mStyle.css
+    Programmer Name: Evan Campbell-Weiner
+    Date Last Updated: 7/22/19
+
+    Description:
+    Used to style the bucket list website motivania.com.
+
+*/
+
+/* fonts across the whole screen */
+body{
+  font-family:century, serif, Times;
+}
+/* styling for middle/main part of page */
+main{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:row;
+}
+
+/* Styling for header/top of page */
+header{
+  font-size:1.2em;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-around;
+  align-items:center;
+  background-color:white;
+  color:black;
+  border: 0.5em solid black;
+  border-radius:0.5em;
+  margin:0.2em;
+  padding:0.2em;
+}
+
+/* styling for h1 */
+h1{
+  font-weight:bolder;
+  font-size:2em;
+}
+
+/* margins for paragraph */
+p{
+  margin-left:8em;
+  margin-right:8em;
+  margin-top:0.5em;
+  margin-bottom:0.5em;
+}
+
+/* Styles for buttons */
+button{
+  background-color:rgb(150, 210, 221);
+  border-radius:3em;
+  border:0.2em Solid black;
+  padding:2em;
+  margin-left:2em;
+  margin-top:1em;
+  min-width:15em;
+}
+
+/* styling for when abutton is hovered over */
+button:hover{
+  background-color:rgba(150, 210, 221,0.2);
+}
+
+/*Styling for water in the bucket*/
+#content{
+  background-color:rgba(25, 42, 255, .50);
+  font-size:1.5em;
+  color:black;
+  padding:0.05em;
+
+}
+
+/*Styling for the ordered list that contains the water in the bucket*/
+ol{
+  padding:0.5em;
+  border-width: 0em 2em 2em 2em;
+  border-radius:0.5em;
+  border-style:solid;
+  border-color:#666;
+  width:30em;
+  margin:3.5em 0em;
+  background-color:#ccc;
+  justify-content:flex-end;
+  display:flex;
+  flex-direction:column;
+  margin-left:1em;
+min-height:27em;
+list-style-type:decimal;
+}
+
+/*styling for the button lists*/
+ul{
+  display:flex;
+  flex-direction:column;
+}
+
+/*styling for the bottom of the page*/
+footer{
+  align-self:flex-end;
+  margin-top:1em;
+}
+
+/*styling for class for when a button is currently chosen*/
+.triggered{
+  background-color:black;
+  color:white;
+}
