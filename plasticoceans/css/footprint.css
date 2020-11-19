@@ -1,0 +1,284 @@
+/*
+    Document Name: footprint.css
+    Programmer Name: Evan Campbell-Weiner
+    Date Last Updated: 7/22/19
+
+    Description:
+    Used to style the actual plastic oceans calculator
+
+    Data Dictionary:
+    #1ACAD3
+    #126491
+    #219B21 Green
+    #23919B
+
+*/
+body{
+    color:white;
+    font-family: "Proxima Nova",'Montserrat', sans-serif;
+    background-image:url("../img/randall_ruiz_turtle.jpg");
+    height:25em;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/*
+    SVGS
+*/
+
+img.SVG{
+    width:3em;
+}
+
+/*
+    Select Boxes
+*/
+
+select{
+    width:4em;
+    text-align-last:center;
+}
+
+button{
+    display:none;
+    width:5em;
+    padding:0.2em;
+    font-size:0.8em;
+    background-color:#219B21;
+    opacity:0.8;
+    color:white;
+    margin:auto;
+    border-radius:0.8em;
+}
+
+button#startFootPrint{
+    width:9em;
+    padding:0.5em;
+    font-size:1em;
+    background-color:#219B21;
+    opacity:0.8;
+    color:white;
+    margin:auto;
+    border-radius:0.8em;
+    display:block;
+}
+
+/* Overarching div for the entire form */
+.questions{
+    padding:auto;
+    margin:auto;
+    margin-top:10em;
+    min-height:20em;
+    background-color: #126491;
+    width: 50em;
+    border-radius:0.8em;
+    opacity:0.96;
+    display:flex;
+    justify-content:center;
+}
+
+
+  /* Overarching div for the Results Page */
+
+  .results{
+    padding:auto;
+    margin:auto;
+    margin-top:10em;
+    min-height:35em;
+    background-color: #219B21;
+    width: 50em;
+    border-radius:0.8em;
+    display:flex;
+    justify-content:center;
+  }
+
+/* Holds all of the tabs contents*/
+
+.outercontainer{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    align-items:center;
+}
+
+/* Holds a Questions Selection Boxes */
+.container{
+    display:flex;
+    justify-content:space-around; 
+}
+
+/* Each Individual Question Box inside Each Question*/
+.selection{
+    margin:1em;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items:center;
+}
+
+.selection label{
+    align-self:flex-start;
+}
+
+
+/* Foot Print Drop Down */
+.footprintdropdown{
+    border-radius:0.25em;
+    margin:auto;
+}
+
+/* Style the form */
+#regForm {
+    background-color: #ffffff;
+    padding: 40px;
+    width: 70%;
+    min-width: 300px;
+  }
+  
+  /* Style the input fields */
+  input {
+    padding: 10px;
+    width: 15em;
+    font-size: 17px;
+    font-family: Raleway;
+    border: 1px solid #aaaaaa;
+  }
+  
+  /* Mark input boxes that gets an error on validation: */
+  input.invalid {
+    background-color: #ffdddd;
+  }
+  
+  /* Hide all steps by default: */
+  .tab {
+    display: none;
+  }
+  
+  /* Make circles that indicate the steps of the form: */
+  .step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+  }
+  
+  /* Mark the active step: */
+  .step.active {
+    opacity: 1;
+  }
+  
+  /* Mark the steps that are finished and valid: */
+  .step.finish {
+    background-color: #219B21;
+  }
+
+
+  /*
+  *
+  * Results Page Stylings
+  *
+  */
+
+
+  /* Calculation Result Page*/
+  #calculationResultsFootPrint{
+      display:none;
+      width:40em;
+      height:auto;
+      font-size:1.1em;
+      padding:1em;
+      border-radius:50%;
+      flex-direction:column;
+      justify-content:space-around;
+      align-items:center;
+  }
+
+  /* Bar Chart */
+  #barchart{
+      width:20em;
+      height:auto;
+  }
+  /* Bar Chart */
+  #piechart{
+    width:20em;
+    height:auto;
+    margin:1em;
+}
+
+    /* Bar Chart */
+    #resultCharts{
+        display:flex;
+        flex-direction:row;
+        justify-content:space-around;
+        align-items:center;
+    }s
+
+
+  #calculationResultsFootPrint p{
+      margin:1.5em;
+  }
+
+  #calculationResultsFootPrint a.button{
+      background-color:#126491;
+      color:white;
+      display:block;
+      padding-top:1em;
+      padding-bottom:1em;
+      padding-right:0.2em;
+      padding-left:0.2em;
+      margin:0.5em;
+      text-decoration:none;
+      border-radius:0.5em;
+      text-align:center;
+  }
+
+  #calculationResultsFootPrint h1{
+      margin-bottom:1em;
+      margin-top:1em;
+      font-size:5em;
+  }
+
+  span.large{
+      font-size:1.4em;
+  }
+
+  #fourstepstohelp{
+      display:flex;
+      flex-direction:row;
+  }
+
+  .steptohelp{
+      background-color:white;
+      width:8em;;
+      margin:0.2em;
+      color:black;
+      border-radius:0.5em;
+      font-size:1em;
+
+  }
+
+  .steptohelp h3{
+        background-color:#126491;
+        color:white;
+        margin:0;
+        padding:0.5em;
+        font-size:0.8em;
+        height:7em;
+        border-top-left-radius:0.5em;
+        border-top-right-radius:0.5em
+  }
+
+  .steptohelp p{
+    padding:1em;
+    font-size:0.8em;
+    color:#126491;
+}
+
+.steptohelp a{
+    font-size:0.7em;
+    align-self:flex-end;
+}

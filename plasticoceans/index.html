@@ -1,0 +1,692 @@
+<!--
+    Program Name:
+    Program Description:
+
+    TODO
+    - Output Results
+    - Format questions
+    - Adjust for mobile
+    - Adjust for Safari
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<!-- head of the document -->
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Plastic Oceans Digital Footprint</title>
+    <!-- Links to Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+
+    <!-- links to css -->
+    <!-- <link href="css/reset.css" rel="stylesheet" type="text/css" /> -->
+    <link href="css/footprint.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <!-- Start of Header -->
+    <header>
+    </header>
+    <!-- End of header-->
+
+    <!-- main content of the page -->
+    <div id="main">
+        <div id="calculateFootPrintMain" class="questions">
+            <form id="calculateFootPrint" action="">
+
+                <!-- One "tab" for each step in the form: -->
+                <div class="tab selection">
+                    <h2 class="QuestionTitle">Calculate your Plastic Footprint - Filler Data Used</h2>
+                    <p>Congratulations on taking your first step towards becoming a plastic pollution 
+                        awareness champion.</p>
+                    <p>Answer 6 simple questions to find out your average annual 
+                        plastic footprint and learn about the steps you can take to reduce it. This will take approximately
+                        3 minutes of your time. 
+                    </p>
+                    <button type="button" id="startFootPrint" onclick="switchTab(1)">Start</button>
+                </div>
+
+                <!-- Kitchen Supplies -->
+                <div class="tab">
+                    <h2 class="QuestionTitle">Question 1: The Kitchen (Weekly)</h2>
+                    <div class="container">
+                        <div class="selection">
+                            <img src="img/PlasticBag.svg" class="SVG" alt="Image of Plastic Bag">
+                            <br />
+                            <label for="PlasticBags">Plastic Bags</label>
+                            <br />
+                            <select id="PlasticBags" class="footprintdropdown" oninput="this.className = ''"
+                                name="cars">
+                                <option value="0">0 </option>
+                                <option value="1">1 </option>
+                                <option value="2">2 </option>
+                                <option value="3">3 </option>
+                                <option value="4">4 </option>
+                                <option value="5">5 </option>
+                                <option value="6">6 </option>
+                                <option value="7">7 </option>
+                                <option value="8">8 </option>
+                                <option value="9">9 </option>
+                                <option value="10">10 </option>
+                                <option value="11">11 </option>
+                                <option value="12">12 </option>
+                                <option value="13">13 </option>
+                                <option value="14">14 </option>
+                                <option value="15">15 </option>
+                                <option value="16">16 </option>
+                                <option value="17">17 </option>
+                                <option value="18">18 </option>
+                                <option value="19">19 </option>
+                                <option value="20">20 </option>
+                            </select>
+                        </div>
+                        <div class="selection">
+                            <img src="img/PlasticBottle.svg" class="SVG" alt="Image of Plastic Bottle">
+                            <br />
+                            <label for="Plastic Bottles">Plastic Bottles</label>
+                            <br />
+                            <select id="Plastic Bottles" class="footprintdropdown" oninput="this.className = ''"
+                                name="cars">
+                                <option value="0">0 </option>
+                                <option value="1">1 </option>
+                                <option value="2">2 </option>
+                                <option value="3">3 </option>
+                                <option value="4">4 </option>
+                                <option value="5">5 </option>
+                                <option value="6">6 </option>
+                                <option value="7">7 </option>
+                                <option value="8">8 </option>
+                                <option value="9">9 </option>
+                                <option value="10">10 </option>
+                                <option value="11">11 </option>
+                                <option value="12">12 </option>
+                                <option value="13">13 </option>
+                                <option value="14">14 </option>
+                                <option value="15">15 </option>
+                                <option value="16">16 </option>
+                                <option value="17">17 </option>
+                                <option value="18">18 </option>
+                                <option value="19">19 </option>
+                                <option value="20">20 </option>
+                                <option value="21">21 </option>
+                                <option value="22">22 </option>
+                                <option value="23">23 </option>
+                                <option value="24">24 </option>
+                                <option value="25">25 </option>
+                                <option value="26">26 </option>
+                                <option value="27">27 </option>
+                                <option value="28">28 </option>
+                                <option value="29">29 </option>
+                                <option value="30">30 </option>
+
+                            </select>
+                        </div>
+                        <div class="selection">
+                            <img src="img/FoodWrapper.svg" class="SVG" alt="Image of Food Wrapper">
+                            <br />
+                            <label for="Food Wrapper" class="label">Food Wrappers</label>
+                            <br />
+                            <select id="Plastic Bottles" class="footprintdropdown" oninput="this.className = ''"
+                                name="cars">
+                                <option value="0">0 </option>
+                                <option value="1">1 </option>
+                                <option value="2">2 </option>
+                                <option value="3">3 </option>
+                                <option value="4">4 </option>
+                                <option value="5">5 </option>
+                                <option value="6">6 </option>
+                                <option value="7">7 </option>
+                                <option value="8">8 </option>
+                                <option value="9">9 </option>
+                                <option value="10">10 </option>
+                                <option value="11">11 </option>
+                                <option value="12">12 </option>
+                                <option value="13">13 </option>
+                                <option value="14">14 </option>
+                                <option value="15">15 </option>
+                                <option value="16">16 </option>
+                                <option value="17">17 </option>
+                                <option value="18">18 </option>
+                                <option value="19">19 </option>
+                                <option value="20">20 </option>
+                            </select>
+                        </div>
+                        <div class="selection">
+                            <img src="img/PlasticStraw.svg" class="SVG" alt="Image of Plastic Straw">
+                            <br />
+                            <label for="PlasticStraw">Plastic Straws</label>
+                            <br />
+                            <select id="PlasticStraw" class="footprintdropdown" oninput="this.className = ''"
+                                name="PlasticStraws">
+                                <option value="0">0 </option>
+                                <option value="1">1 </option>
+                                <option value="2">2 </option>
+                                <option value="3">3 </option>
+                                <option value="4">4 </option>
+                                <option value="5">5 </option>
+                                <option value="6">6 </option>
+                                <option value="7">7 </option>
+                                <option value="8">8 </option>
+                                <option value="9">9 </option>
+                                <option value="10">10 </option>
+                                <option value="11">11 </option>
+                                <option value="12">12 </option>
+                                <option value="13">13 </option>
+                                <option value="14">14 </option>
+                                <option value="15">15 </option>
+                                <option value="16">16 </option>
+                                <option value="17">17 </option>
+                                <option value="18">18 </option>
+                                <option value="19">19 </option>
+                                <option value="20">20 </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bathroom Essentials -->
+                <div class="tab">
+                    <h2 class="QuestionTitle">Question 2: Bathroom Essentials (Monthly)</h2>
+                    <div class="container">
+
+                        <!-- Cotton Swabs -->
+                        <div class="selection">
+                            <img src="img/Swabs.svg" class="SVG" alt="Image of Swabs">
+                            <br />
+                            <label for="Swabs">Cotton Swabs</label>
+                            <br />
+                            <select id="Swabs" class="footprintdropdown" oninput="this.className = ''" name="Swabs">
+                                <option value="0">0 </option>
+                                <option value="1">1 </option>
+                                <option value="2">2 </option>
+                                <option value="3">3 </option>
+                                <option value="4">4 </option>
+                                <option value="5">5 </option>
+                                <option value="6">6 </option>
+                                <option value="7">7 </option>
+                                <option value="8">8 </option>
+                                <option value="9">9 </option>
+                                <option value="10">10 </option>
+                                <option value="11">11 </option>
+                                <option value="12">12 </option>
+                                <option value="13">13 </option>
+                                <option value="14">14 </option>
+                                <option value="15">15 </option>
+                                <option value="16">16 </option>
+                                <option value="17">17 </option>
+                                <option value="18">18 </option>
+                                <option value="19">19 </option>
+                                <option value="20">20 </option>
+                                <option value="21">21 </option>
+                                <option value="22">22 </option>
+                                <option value="23">23 </option>
+                                <option value="24">24 </option>
+                                <option value="25">25 </option>
+                                <option value="26">26 </option>
+                                <option value="27">27 </option>
+                                <option value="28">28 </option>
+                                <option value="29">29 </option>
+                                <option value="30">30 </option>
+                            </select>
+                        </div>
+
+                        <!-- Detergent Bottles -->
+                        <div class="selection">
+                            <img src="img/DetergentContainer.svg" class="SVG" alt="Image of Detergent Container">
+                            <br />
+                            <label for="DetergentContainer">Detergent Container</label>
+                            <br />
+                            <select id="DetergentContainer" class="footprintdropdown" oninput="this.className = ''"
+                                name="DetergentContainer">
+                                <option value="0">0 </option>
+                                <option value="1">1 </option>
+                                <option value="2">2 </option>
+                                <option value="3">3 </option>
+                                <option value="4">4 </option>
+                                <option value="5">5 </option>
+                                <option value="6">6 </option>
+                                <option value="7">7 </option>
+                                <option value="8">8 </option>
+                                <option value="9">9 </option>
+                                <option value="10">10 </option>
+                            </select>
+                        </div>
+
+                        <!-- Shampoo Bottles -->
+                        <div class="selection">
+                            <img src="img/ShampooBottle.svg" class="SVG" alt="Image of Shampoo Bottle">
+                            <br />
+                            <label for="ShampooBottle">Shampoo Bottle</label>
+                            <br />
+                            <select id="ShampooBottle" class="footprintdropdown" oninput="this.className = ''"
+                                name="ShampooBottle">
+                                <option value="0">0 </option>
+                                <option value="1">1 </option>
+                                <option value="2">2 </option>
+                                <option value="3">3 </option>
+                                <option value="4">4 </option>
+                                <option value="5">5 </option>
+                                <option value="6">6 </option>
+                                <option value="7">7 </option>
+                                <option value="8">8 </option>
+                                <option value="9">9 </option>
+                                <option value="10">10 </option>
+                            </select>
+                        </div>
+
+                        <!-- Tooth Brush-->
+                        <div class="selection">
+                            <img src="img/ToothBrush.svg" class="SVG" alt="Image of Toothbrush">
+                            <br />
+                            <label for="ToothBrush">Toothbrush</label>
+                            <br />
+                            <select id="ToothBrush" class="footprintdropdown" oninput="this.className = ''"
+                                name="ToothBrush">
+                                <option value="0">0 </option>
+                                <option value="1">1 </option>
+                                <option value="2">2 </option>
+                                <option value="3">3 </option>
+                                <option value="4">4 </option>
+                                <option value="5">5 </option>
+                                <option value="6">6 </option>
+                                <option value="7">7 </option>
+                                <option value="8">8 </option>
+                                <option value="9">9 </option>
+                                <option value="10">10 </option>
+                            </select>
+                        </div>
+
+                        <!-- Toothpaste -->
+                        <div class="selection">
+                            <img src="img/Toothpaste.svg" class="SVG" alt="Image of Toothpaste">
+                            <br />
+                            <label for="Toothpaste">Toothpaste</label>
+                            <br />
+                            <select id="Toothpaste" class="footprintdropdown" oninput="this.className = ''"
+                                name="Toothpaste">
+                                <option value="0">0 </option>
+                                <option value="1">1 </option>
+                                <option value="2">2 </option>
+                                <option value="3">3 </option>
+                                <option value="4">4 </option>
+                                <option value="5">5 </option>
+                                <option value="6">6 </option>
+                                <option value="7">7 </option>
+                                <option value="8">8 </option>
+                                <option value="9">9 </option>
+                                <option value="10">10 </option>
+                            </select>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+                <!-- Take Out Orders -->
+                <div class="tab">
+                    <h2 class="QuestionTitle">Question 3: Take Out Orders (Weekly)</h2>
+                    <div class="container">
+                        <!-- Plastic Boxes-->
+                        <div class="selection">
+                            <img src="img/PlasticBox.svg" class="SVG" alt="Image of Plastic Box">
+                            <br />
+                            <label for="Shirt">Take Out Boxes</label>
+                            <br />
+                            <select id="Shirt" class="footprintdropdown" oninput="this.className = ''"
+                                name="PlasticBoxes">
+                                   <option value="0">0 </option>
+                                <option value="1">1 </option>
+                                <option value="2">2 </option>
+                                <option value="3">3 </option>
+                                <option value="4">4 </option>
+                                <option value="5">5 </option>
+                                <option value="6">6 </option>
+                                <option value="7">7 </option>
+                                <option value="8">8 </option>
+                                <option value="9">9 </option>
+                                <option value="10">10 </option>
+                                <option value="11">11 </option>
+                                <option value="12">12 </option>
+                                <option value="13">13 </option>
+                                <option value="14">14 </option>
+                                <option value="15">15 </option>
+                                <option value="16">16 </option>
+                                <option value="17">17 </option>
+                                <option value="18">18 </option>
+                                <option value="19">19 </option>
+                                <option value="20">20 </option>
+                            </select>
+                        </div>
+
+                        <!-- Plastic Cups-->
+                        <div class="selection">
+                            <img src="img/PlasticCup.svg" class="SVG" alt="Image of Plastic Cup">
+                            <br />
+                            <label for="PlasticCups">Plastic Cups</label>
+                            <br />
+                            <select id="PlasticCups" class="footprintdropdown" oninput="this.className = ''"
+                                name="PlasticCups">
+                                <option value="0">0 </option>
+                                <option value="1">1 </option>
+                                <option value="2">2 </option>
+                                <option value="3">3 </option>
+                                <option value="4">4 </option>
+                                <option value="5">5 </option>
+                                <option value="6">6 </option>
+                                <option value="7">7 </option>
+                                <option value="8">8 </option>
+                                <option value="9">9 </option>
+                                <option value="10">10 </option>
+                                <option value="11">11 </option>
+                                <option value="12">12 </option>
+                                <option value="13">13 </option>
+                                <option value="14">14 </option>
+                                <option value="15">15 </option>
+                                <option value="16">16 </option>
+                                <option value="17">17 </option>
+                                <option value="18">18 </option>
+                                <option value="19">19 </option>
+                                <option value="20">20 </option>
+                            </select>
+                        </div>
+
+                        <!-- Disposable Cutlery -->
+                        <div class="selection">
+                            <img src="img/cutlery.svg" class="SVG" alt="Image of Cutlery">
+                            <br />
+                            <label for="cutlery">Disposable Cutlery</label>
+                            <br />
+                            <select id="cutlery" class="footprintdropdown" oninput="this.className = ''" name="cutlery">
+                                <option value="0">0 </option>
+                                <option value="1">1 </option>
+                                <option value="2">2 </option>
+                                <option value="3">3 </option>
+                                <option value="4">4 </option>
+                                <option value="5">5 </option>
+                                <option value="6">6 </option>
+                                <option value="7">7 </option>
+                                <option value="8">8 </option>
+                                <option value="9">9 </option>
+                                <option value="10">10 </option>
+                                <option value="11">11 </option>
+                                <option value="12">12 </option>
+                                <option value="13">13 </option>
+                                <option value="14">14 </option>
+                                <option value="15">15 </option>
+                                <option value="16">16 </option>
+                                <option value="17">17 </option>
+                                <option value="18">18 </option>
+                                <option value="19">19 </option>
+                                <option value="20">20 </option>
+                            </select>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Fashion -->
+                <div class="tab">
+                    <h2 class="QuestionTitle">Question 4: Clothing (Monthly)</h2>
+                    <div class="container">
+                            <!-- Tops/Shirts-->
+                            <div class="selection">
+                                <img src="img/TShirt.svg" class="SVG" alt="Image of T-Shirt">
+                                <br />
+                                <label for="Shirt">Tops/Shirts</label>
+                                <br />
+                                <select id="Shirt" class="footprintdropdown" oninput="this.className = ''" name="Shirt">
+                                <option value="0">0 </option>
+                                <option value="1">1 </option>
+                                <option value="2">2 </option>
+                                <option value="3">3 </option>
+                                <option value="4">4 </option>
+                                <option value="5">5 </option>
+                                <option value="6">6 </option>
+                                <option value="7">7 </option>
+                                <option value="8">8 </option>
+                                <option value="9">9 </option>
+                                <option value="10">10 </option>
+                                <option value="11">11 </option>
+                                <option value="12">12 </option>
+                                <option value="13">13 </option>
+                                <option value="14">14 </option>
+                                <option value="15">15 </option>
+                                <option value="16">16 </option>
+                                <option value="17">17 </option>
+                                <option value="18">18 </option>
+                                <option value="19">19 </option>
+                                <option value="20">20 </option>
+                                <option value="21">21 </option>
+                                <option value="22">22 </option>
+                                <option value="23">23 </option>
+                                <option value="24">24 </option>
+                                <option value="25">25 </option>
+                                <option value="26">26 </option>
+                                <option value="27">27 </option>
+                                <option value="28">28 </option>
+                                <option value="29">29 </option>
+                                <option value="30">30 </option>
+                                </select>
+                            </div>
+
+                            <!-- Jeans/Pants-->
+                            <div class="selection">
+                                <img src="img/Pants.svg" class="SVG" alt="Image of Pants">
+                                <br />
+                                <label for="Pants">Bottoms/Pants</label>
+                                <br />
+                                <select id="Pants" class="footprintdropdown" oninput="this.className = ''" name="Pants">
+                                <option value="0">0 </option>
+                                <option value="1">1 </option>
+                                <option value="2">2 </option>
+                                <option value="3">3 </option>
+                                <option value="4">4 </option>
+                                <option value="5">5 </option>
+                                <option value="6">6 </option>
+                                <option value="7">7 </option>
+                                <option value="8">8 </option>
+                                <option value="9">9 </option>
+                                <option value="10">10 </option>
+                                <option value="11">11 </option>
+                                <option value="12">12 </option>
+                                <option value="13">13 </option>
+                                <option value="14">14 </option>
+                                <option value="15">15 </option>
+                                <option value="16">16 </option>
+                                <option value="17">17 </option>
+                                <option value="18">18 </option>
+                                <option value="19">19 </option>
+                                <option value="20">20 </option>
+                                </select>
+                            </div>
+                    </div>
+                </div>
+
+                <!-- Smoking -->
+                <div class="tab">
+                    <h2 class="QuestionTitle">Question 5: Smoking (Weekly) </h2>
+                    <div class="container">
+                            <!-- Smoking-->
+                            <div class="selection">
+                                <img src="img/cigarette.svg" class="SVG" alt="Image of Cigarette">
+                                <br />
+                                <label for="smoking">Packs</label>
+                                <br />
+                                <select id="smoking" class="footprintdropdown" oninput="this.className = ''"
+                                    name="smoking">
+                                <option value="0">0 </option>
+                                <option value="1">1 </option>
+                                <option value="2">2 </option>
+                                <option value="3">3 </option>
+                                <option value="4">4 </option>
+                                <option value="5">5 </option>
+                                <option value="6">6 </option>
+                                <option value="7">7 </option>
+                                <option value="8">8 </option>
+                                <option value="9">9 </option>
+                                <option value="10">10 </option>
+                                <option value="11">11 </option>
+                                <option value="12">12 </option>
+                                <option value="13">13 </option>
+                                <option value="14">14 </option>
+                                <option value="15">15 </option>
+                                <option value="16">16 </option>
+                                <option value="17">17 </option>
+                                <option value="18">18 </option>
+                                <option value="19">19 </option>
+                                <option value="20">20 </option>
+                                </select>
+                            </div>
+                    </div>
+                </div>
+
+                <!-- E-Commerce -->
+                <div class="tab">
+                    <h2 class="QuestionTitle">Question 6: E-Commerce (Weekly) </h2>
+                    <div class="container">
+                            <!-- E-Commerce -->
+                            <div class="selection">
+                                <img src="img/package.svg" class="SVG" alt="Image of Package">
+                                <br />
+                                <label for="ecommerce">Deliveries (Monthly)</label>
+                                <br />
+                                <select id="ecommerce" class="footprintdropdown" oninput="this.className = ''"
+                                    name="ecommerce">
+                                <option value="0">0 </option>
+                                <option value="1">1 </option>
+                                <option value="2">2 </option>
+                                <option value="3">3 </option>
+                                <option value="4">4 </option>
+                                <option value="5">5 </option>
+                                <option value="6">6 </option>
+                                <option value="7">7 </option>
+                                <option value="8">8 </option>
+                                <option value="9">9 </option>
+                                <option value="10">10 </option>
+                                <option value="11">11 </option>
+                                <option value="12">12 </option>
+                                <option value="13">13 </option>
+                                <option value="14">14 </option>
+                                <option value="15">15 </option>
+                                <option value="16">16 </option>
+                                <option value="17">17 </option>
+                                <option value="18">18 </option>
+                                <option value="19">19 </option>
+                                <option value="20">20 </option>
+                                </select>
+                            </div>
+                    </div>
+                </div>
+
+                <noscript><br />It appears your browser does not support javascript. This means you won't be able
+                    to take the quiz. Sorry for any inconvenience! 
+                </noscript>
+
+                <div style="overflow:auto;">
+                    <div style="float:right;">
+                        <button type="button" id="prevBtn" onclick="switchTab(-1)">Previous</button>
+                        <button type="button" id="nextBtn" onclick="switchTab(1)">Next</button>
+                        <button type="button" id="submit" onclick="submitform()">Submit</button>
+                    </div>
+                </div>
+
+                <!-- Circles which indicates the steps of the form: -->
+                <div class="steps" style="text-align:center;margin-top:40px;">
+                    <span class="step"></span>
+                    <span class="step"></span>
+                    <span class="step"></span>
+                    <span class="step"></span>
+                    <span class="step"></span>
+                    <span class="step"></span>
+                    <span class="step"></span>
+                    <span class="step"></span>
+                    <span class="step"></span>
+                </div>
+
+            </form>
+
+            <div id="calculationResultsFootPrint">
+                <span class="large">Your average plastic consumption per year is:</span>
+                <h1><span id="consumptionkg"></span>kg</h1>
+                <h2><span id="largestkg"></span></h2>
+                <p>Here is a breakdown of your plastic footprint:</p>
+                <div id="resultCharts">
+                    <div id="piechart"></div>
+                    <div id="barchart"></div>
+                </div>
+                <p><b>Remember that we featured only the basic plastic items,
+                     so your actual plastic footprint may be even higher!</b></p>
+                     
+                <p>You are contributing to <span class="large"><b>8 million tons</b></span>
+                    of plastic thrown into our oceans <b>every year</b>.</p>
+
+                <p>We know that plastic is everywhere, and if you and all of us
+                    do not collectively act now to reduce our plastic footprint further,
+                    there will be <span class="large"><b>more plastic than fish</b></span> in the world's oceans by 2050!
+                </p>
+
+                <h2>Four Steps you can Take to Help:</h2>
+                <div id="fourstepstohelp">
+                    <div id="step1tohelp" class="steptohelp">
+                       <h3><span class="large">1</span> Offset your plastic footprint by donating to Plastic Oceans Canada</h3>
+                        <p>Every $10 you donate helps offset 1 pound of plastic!</p>
+                        <p>How many pounds of plastic woudl you like to offset?</p>
+                        <a class="button" href="https://plasticoceans.org/donate/">Donate</a>
+                    </div>
+                    <div id="step2tohelp" class="steptohelp">
+                        <h3><span class="large">2</span> Download the MyPlasticDiary app</h3>
+                        <p>Track and reduce your plastic footprint</p>
+                        <p>Log all plastic items you buy</p>
+                        <p>Set goals</p>
+                        <p>Receive virtual awards</p>
+                        <p>Share your progress on social media to inspire others.</p>
+                        <a class="button" href="https://www.myplasticdiary.co.uk/">Download</a>
+                    </div>
+                    <div id="step3tohelp" class="steptohelp">
+                        <h3><span class="large">3</span> Participate in our Citizen Science programs</h3>
+                        <p>become your local community plastic champion!</p>
+                    </div>
+                    <div id="step4tohelp" class="steptohelp">
+                        <h3><span class="large">4</span> Transform your workplace to a purpose driven brand.</h3>
+                        <p>Write to us at <a href="mailto:canada@plasticocean.ca">canada@plasticocean.ca</a> and we can help you conduct a friendly plastic audit,
+                            design customised employee engagement solutions, and create marketing
+                            campaigns.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Main content-->
+
+
+    <!-- Start of Footer -->
+    <footer>
+    </footer>
+    <!-- End of Footer-->
+
+    <!-- included scripts -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+
+
+    <!-- Google Script for Pie Chart-->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+        
+    <!-- fallback for jQuery if CDN is unavailable -->
+    <script>
+        window.jQuery ||
+            document.write('<script src="scripts/jquery.js"><\/script>');
+    </script>
+
+    <!-- Custom Scripts -->
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>
